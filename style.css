@@ -1,0 +1,243 @@
+@media (min-width: 1000px) {
+  .navbar .navbar-collapse {
+    margin-left: 40%;
+  }
+  .nav-item {
+    padding: 10px;
+    text-decoration: none;
+  }
+  .card {
+    width: 250px;
+  }
+  .footer-content {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.navbar-toggler{
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.btn {
+  padding: 4px 20px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background: linear-gradient(45deg, #01d1fd, #0083c7);
+}
+.poster {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to right, #01d0fc, #0070ac);
+}
+.poster-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.poster-left h1 {
+  font-size: 60px;
+  font-weight: lighter;
+}
+.poster-left p {
+  padding: 20px 0px;
+  font-weight: lighter;
+  max-width: 350px;
+}
+.categories {
+  padding: 10px;
+}
+.list-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.list-category-head h4 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.list-category-items {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-category-items a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+.list-category-items a:hover {
+  color: #110d7d;
+  /* text-decoration: underline; */
+}
+
+.cards {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.card {
+  /* height: 230px;
+    width: 180px; */
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(232, 231, 231);
+  border-right: 1px solid rgb(232, 231, 231);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-top: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-image {
+  padding: 10px;
+  /* height: 80%; */
+  width: 90%;
+  height: 80px;
+  background-color: rgb(238, 238, 236);
+  border-radius: 5px;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-content h6 {
+  font-size: 15px;
+  max-width: 150px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.card-content p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: rgb(84, 84, 83);
+}
+
+.card-content button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background: linear-gradient(45deg, #01d1fd, #0083c7);
+  cursor: pointer;
+}
+.footer-content {
+  background: linear-gradient(to right, #07a6ca, #0070ac);
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+}
+
+.footer-description {
+  margin-top: 10px;
+}
+.footer-description h6 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+.footer-description p {
+  font-size: 14px;
+  padding: 20px 0px;
+  max-width: 250px;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link a {
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+  max-width: 250px;
+  margin-top: 8px;
+}
+
+hr {
+  border-color: #ffffff;
+  opacity: 0.5;
+  width: 70%;
+}
+.social-media {
+  padding-bottom: 10px;
+}
+.icon {
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 2px rgba(136, 134, 134, 0.3);
+  cursor: pointer;
+}
+.icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.footer-end {
+  background-color: rgb(26, 24, 24);
+  width: 100%;
+  height: 50px;
+}
+
+
+
+.loader-container {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
